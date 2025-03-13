@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import pro.sky.calculator.exception.ExceptionDivideByZero;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class CalculateServiceImplTest {
 
     private final CalculateServiceImpl calculateService = new CalculateServiceImpl();
