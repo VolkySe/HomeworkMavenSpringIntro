@@ -10,4 +10,6 @@ class CalculatorApplicationTests {
 	void contextLoads() {
 	}
 
+    public static class CalculatorServiceImplParameterizedTests {
+    }
 }
