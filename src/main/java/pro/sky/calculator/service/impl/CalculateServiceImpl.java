@@ -25,7 +25,7 @@ public class CalculateServiceImpl implements CalculatorService {
             return "Оба аргумента обязательны";
         }
         Integer result = num1 - num2;
-        return num1 + " + " + num2 + " = " + result;
+        return num1 + " - " + num2 + " = " + result;
     }
 
     @Override
@@ -34,7 +34,7 @@ public class CalculateServiceImpl implements CalculatorService {
                 return "Оба аргумента обязательны";
             }
             Integer result = num1 * num2;
-            return num1 + " + " + num2 + " = " + result;
+            return num1 + " * " + num2 + " = " + result;
         }
 
     @Override

@@ -22,89 +22,91 @@ class CalculateServiceImplTest {
         Assertions.assertEquals(expectedResult, actualResult);
 
         //given
-        ////num1 = 25;
-        ////num2 = 5;
-        ////expectedResult = 30;
+        num1 = -10;
+        num2 = -5;
+        expectedResult = num1 + " + " + num2 + " = " + (num1 + num2);
         //when
-        ////actualResult = calculateService.plus(num1, num2);
+        actualResult = calculateService.plus(num1, num2);
         //then
-        ////Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertEquals(expectedResult, actualResult);
+
     }
 
     @Test
     void minus() {
         //given
-        int num1 = 10;
-        int num2 = 5;
-        int expectedResult = 5;
+        Integer num1 = 10;
+        Integer num2 = 5;
+        String expectedResult = num1 + " - " + num2 + " = " + (num1 - num2);
         //when
-        ////Integer actualResult = calculateService.minus(num1, num2);
+        String actualResult = calculateService.minus(num1, num2);
         //then
-        ////Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertEquals(expectedResult, actualResult);
 
         //given
-        num1 = 25;
-        num2 = 5;
-        expectedResult = 20;
+        num1 = -10;
+        num2 = -5;
+        expectedResult = num1 + " - " + num2 + " = " + (num1 - num2);
         //when
-        ////actualResult = calculateService.minus(num1, num2);
+        actualResult = calculateService.minus(num1, num2);
         //then
-        ////Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertEquals(expectedResult, actualResult);
+
     }
 
     @Test
     void multiply() {
         //given
-        int num1 = 10;
-        int num2 = 5;
-        int expectedResult = 50;
+        Integer num1 = 10;
+        Integer num2 = 5;
+        String expectedResult = num1 + " * " + num2 + " = " + (num1 * num2);
         //when
-        ////Integer actualResult = calculateService.multiply(num1, num2);
+        String actualResult = calculateService.multiply(num1, num2);
         //then
-        ////Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertEquals(expectedResult, actualResult);
 
         //given
-        num1 = 25;
-        num2 = 5;
-        expectedResult = 125;
+        num1 = -10;
+        num2 = -5;
+        expectedResult = num1 + " * " + num2 + " = " + (num1 * num2);
         //when
-        ////actualResult = calculateService.multiply(num1, num2);
+        actualResult = calculateService.multiply(num1, num2);
         //then
-        ////Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertEquals(expectedResult, actualResult);
 
     }
 
     @Test
     void divide() {
-        //given
-        int num1 = 10;
-        int num2 = 5;
-        int expectedResult = 2;
+//given
+        Integer num1 = 10;
+        Integer num2 = 5;
+        String expectedResult = num1 + " / " + num2 + " = " + (num1 / num2);
         //when
-        ////Integer actualResult = calculateService.divide(num1, num2);
+        String actualResult = calculateService.divide(num1, num2);
         //then
-        ////Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertEquals(expectedResult, actualResult);
 
         //given
-        num1 = 25;
-        num2 = 5;
-        expectedResult = 5;
+        num1 = -10;
+        num2 = -5;
+        expectedResult = num1 + " / " + num2 + " = " + (num1 / num2);
         //when
-        ////actualResult = calculateService.divide(num1, num2);
+        actualResult = calculateService.divide(num1, num2);
         //then
-        ////Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertEquals(expectedResult, actualResult);
     }
 
     @Test
     void shouldThrowExceptionWhenSecondArgIsZero() {
         //given
-        int num1 = 25;
-        int num2 = 0;
+        Integer num1 = 25;
+        Integer num2 = 0;
         //when
         //then
-        ////Assertions.assertThrows(
-        ////        ExceptionDivideByZero.class,
-        ////        () -> calculateService.divide(num1, num2)
-        ////);
+        Assertions.assertThrows(
+                ExceptionDivideByZero.class,
+                () -> calculateService.divide(num1, num2)
+        );
     }
 }
